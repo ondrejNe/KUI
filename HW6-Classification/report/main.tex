@@ -1,0 +1,57 @@
+\documentclass[a4paper, 11pt]{report}
+
+%%%%%%%%%%%%
+% Packages %
+%%%%%%%%%%%%
+
+\usepackage[english]{babel}
+\usepackage{packages/sleek}
+\usepackage{packages/sleek-title}
+\usepackage{packages/sleek-theorems}
+\usepackage{packages/sleek-listings}
+\usepackage{import}
+
+%%%%%%%%%%%%%%
+% Title-page %
+%%%%%%%%%%%%%%
+
+%\logo{./resources/pdf/logo.pdf}
+\institute{Kybernetika a umělá inteligence}
+\faculty{B3B33KUI}
+%\department{Department of Anything but Psychology}
+\title{Classificator selection report}
+% \subtitle{Distributed embedded data acquisition system of an experimental rocket}
+\author{Ondrej Nečas}
+%\supervisor{Linus \textsc{Torvalds}}
+\context{Template: \href{https://github.com/francois-rozet/sleek-template.git}{github.com francois-rozet sleek-template}}
+\date{\today}
+
+%%%%%%%%%%%%%%%%
+% Bibliography %
+%%%%%%%%%%%%%%%%
+
+%\addbibresource{./resources/bib/references.bib}
+
+%%%%%%%%%%
+% Macros %
+%%%%%%%%%%
+
+\newcommand{\tbs}{\textbackslash}
+
+%%%%%%%%%%%%
+% Document %
+%%%%%%%%%%%%
+
+\begin{document}
+    \maketitle
+%    \newpage
+%    \pagenumbering{roman}
+%    \tableofcontents
+    \newpage
+    \pagenumbering{arabic}
+
+    \include{01-parameter-selection}
+    \include{02-top-secret}
+    \include{03-securely}
+
+\end{document}
