@@ -3,3 +3,4 @@
 classif_result_tables
 report/debug/*
 report/debug/
+venv
